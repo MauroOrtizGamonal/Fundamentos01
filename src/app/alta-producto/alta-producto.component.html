@@ -1,0 +1,14 @@
+<div class="alta-producto-container">
+    <h2>Alta de Producto</h2>
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" [(ngModel)]="precio" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" name="stock" [(ngModel)]="stock" class="form-control">
+    </div>
+    <button (click)="ingresarProducto()" class="btn btn-primary">Ingresar</button>
+    <p class="mensaje">{{ mensaje }}</p>
+  </div>
+  
